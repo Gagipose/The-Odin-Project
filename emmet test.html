@@ -1,3 +1,6 @@
+<!-- using "!" to create start boiler-->
+ <!-- https://docs.emmet.io/cheat-sheet/ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +9,8 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- id = # -> class = . -> manualy set = [] -->
     <span></span>
     <a href=""></a>
     <a href=""></a>
@@ -13,6 +18,7 @@
     <div class="open modern" id="email"></div>
     <div name="eqwe"></div>
 
+    <!-- .banana>span.target -> div is default-->
     <div class="banana"><span class="target"></span></div>
 
     <div class="mango"><button></button></div>
@@ -23,6 +29,10 @@
         </nav>
     </header>
 
+    [boom]
+
+
+    <!-- header>nav>ul*4 -> * to multiply-->
     <header>
         <nav>
             <ul></ul>
@@ -31,6 +41,68 @@
             <ul></ul>
         </nav>
     </header>
+
+    <!-- header>nav>ul*3{magicalmushroom} -> {} to make text -->
+    <header>
+        <nav>
+            <ul>magicalmushroom</ul>
+            <ul>magicalmushroom</ul>
+            <ul>magicalmushroom</ul>
+        </nav>
+    </header>
+
+
+    <!-- header>nav>ul*3{shroom $} -> $ to autogenerate number -->
+    <header>
+        <nav>
+            <ul>shroom 1</ul>
+            <ul>shroom 2</ul>
+            <ul>shroom 3</ul>
+        </nav>
+    </header>
+
+    <!-- header>ul*3{item$$} -->
+    <header>
+        <ul>item01</ul>
+        <ul>item02</ul>
+        <ul>item03</ul>
+    </header>
+
+    <!-- header+main+footer -> Use "+" to put them next to each other -->
+    <header></header>
+    <main></main>
+    <footer></footer>
+    
+    <!-- (header>nav)+main+footer -> parantesis to group-->
+    <header>
+        <nav></nav>
+    </header>
+    <main></main>
+    <footer></footer>
+
+    <!-- (header>h2{Heading}+nav>ol>li*4>a{Link $})+main+footer -->
+    <header>
+        <h2>Heading</h2>
+        <nav>
+            <ol>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+                <li><a href="">Link 4</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+
+
+    <!-- input:password -->
+     <input type="password" name="" id="">
+
+    <!-- input:password[name="spaghet" id="i"] -->
+    <input type="password" name="spaghet" id="i">
+
+
 
 </body>
 </html>
