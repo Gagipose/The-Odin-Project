@@ -1,5 +1,6 @@
 :root {
-    --main-color: blue;
+    --main-color: #a6a6e6;
+    --hover-color: #bbe719cf;
 }
 
 h1 {
@@ -7,5 +8,26 @@ h1 {
 }
 
 h1:hover {
-    color: green;
+    color: var(--hover-color);
 }
+
+h2 {
+    color: var(--main-color);
+    transition: scale 0.5s;
+}
+
+h2:hover {
+    color: var(--hover-color);
+    scale: 1.2;
+}
+
+
+.main-text {
+    padding: 10vw;
+}
+
+
+
+/* h1:hover {
+    color: green;
+} */
