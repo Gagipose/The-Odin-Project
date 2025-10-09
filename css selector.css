@@ -5,3 +5,7 @@
 h1 {
     color: var(--main-color);
 }
+
+h1:hover {
+    color: green;
+}
