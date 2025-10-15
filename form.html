@@ -8,14 +8,28 @@
       label, input, textarea {
         display: block;
       }
-      input, textarea {
+      input, textarea, select, div {
         margin-bottom: 10px;
+      }
+
+      div.difficulty  {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-left: 10px;
+        gap: 2.5vw;
+      }
+
+      .option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     </style>
 </head>
 <body>
     <h1>bamse form</h1>
-        <form action="http://httpbin.org/post" method="post">
+        <form action="http://httpbin.org/post" method="POST">
             <label for="first_name">First Name:</label>
             <input type="text" name="first_name" id="first_name">
 
@@ -27,10 +41,48 @@
 
             <label for="password">password:</label>
             <input type="password" id="password" name="password" placeholder="password">
-
+            
+            <label for="freetext">your lore:</label>
             <textarea name="freetext" id="freetext" placeholder="enter whatever you want"></textarea>
 
+            <!-- the "selected" attribute preselects that option -->
+            <label>select your special perk and mount!</label>
+            <select name="Power-up" id="Power-up">
+                <option value="strength">strength</option>
+                <option value="speed" selected>speed</option>
+                <option value="black magic">black magic</option> 
+            </select>
+
+            <select name="mount" id="mount">
+                <optgroup label="fueled by gas">
+                    <option value="toyota">toyota</option>
+                    <option value="gas-stove">gas stove</option>
+                    <option value="baby-dragon">baby dragon</option>
+                </optgroup>
+                <optgroup label="fueld by grass">
+                    <option value="horse">horse</option>
+                    <option value="magic-cow">magic cow</option>
+                    <option value="vegan">vegan</option>
+                </optgroup>
+            </select>
+            <!-- adding "checked" to radio input pre-checks the box -->
+             <!-- radios use name="" attribute to group em togeather so it can deselect when you pick another -->
+        <div class="difficulty">
+            <div class="option">
+                <input type="radio" id="difficulty" name="difficulty" value="easy">
+                <label for="easy">easy</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="difficulty" name="difficulty" value="medium" checked>
+                <label for="medium">medium</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="difficulty" name="difficulty" value="hard">
+                <label for="medium">hard</label>
+            </div>
+        </div>
         </form>
         <!-- "name="" attribute is like a variable for the backend" -->
+         <!-- label becomes clickable when you select the for="" " -->
 </body>
 </html>
