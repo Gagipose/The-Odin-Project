@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      label, input, textarea {
+        display: block;
+      }
+      input, textarea {
+        margin-bottom: 10px;
+      }
+    </style>
 </head>
 <body>
     <h1>bamse form</h1>
-        <form action="" method="post">
+        <form action="http://httpbin.org/post" method="post">
             <label for="first_name">First Name:</label>
-            <input type="text" name="" id="first_name">
-        </form>
-        <form action="" method="post">
+            <input type="text" name="first_name" id="first_name">
+
             <label for="username" class="for">Username:</label>
-            <input type="text" name="" id="username" placeholder="username">
+            <input type="text" name="username" id="username" placeholder="username">
+
+            <label for="user_email">Email Address:</label>
+            <input type="email" id="user_email" name="email" placeholder="your.email@here.com">
+
+            <label for="password">password:</label>
+            <input type="password" id="password" name="password" placeholder="password">
+
+            <textarea name="freetext" id="freetext" placeholder="enter whatever you want"></textarea>
+
         </form>
+        <!-- "name="" attribute is like a variable for the backend" -->
 </body>
 </html>
