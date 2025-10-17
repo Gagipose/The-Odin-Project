@@ -34,10 +34,10 @@
             <input type="text" name="first_name" id="first_name">
 
             <label for="username" class="for">Username:</label>
-            <input type="text" name="username" id="username" placeholder="username">
+            <input type="text" name="username" id="username" placeholder="username" required>
 
             <label for="user_email">Email Address:</label>
-            <input type="email" id="user_email" name="email" placeholder="your.email@here.com">
+            <input type="email" id="user_email" name="email" placeholder="your.email@here.com" required>
 
             <label for="password">password:</label>
             <input type="password" id="password" name="password" placeholder="password">
@@ -67,20 +67,21 @@
             </select>
             <!-- adding "checked" to radio input pre-checks the box -->
              <!-- radios use name="" attribute to group em togeather so it can deselect when you pick another -->
-        <div class="difficulty">
-            <div class="option">
-                <input type="radio" id="difficulty" name="difficulty" value="easy">
-                <label for="easy">easy</label>
+            <div class="difficulty">
+                <div class="option">
+                    <input type="radio" id="difficulty" name="difficulty" value="easy">
+                    <label for="easy">easy</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="difficulty" name="difficulty" value="medium" checked>
+                    <label for="medium">medium</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="difficulty" name="difficulty" value="hard">
+                    <label for="medium">hard</label>
+                </div>
             </div>
-            <div class="option">
-                <input type="radio" id="difficulty" name="difficulty" value="medium" checked>
-                <label for="medium">medium</label>
-            </div>
-            <div class="option">
-                <input type="radio" id="difficulty" name="difficulty" value="hard">
-                <label for="medium">hard</label>
-            </div>
-        </div>
+            <button type="sumbit">Sumbit</button>
         </form>
         <!-- "name="" attribute is like a variable for the backend" -->
          <!-- label becomes clickable when you select the for="" " -->
