@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="form-block">
+        <h1>We wont tell you what you are signing up for, and thats the fun part!</h1>
+        <h2>Only a whacko wouldn't sign up, what are you waiting for?</h2>
+
+        <form action="https://postman-echo.com/post" method="post">
+            <div class="inputs">
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name">
+                
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <label for="phone_number">Phone Number</label>
+                <input type="number" name="phone_number" id="phone_number">
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" name="confirm_password" id="confirm_password">
+            </div>
+            <button type="submit">Sumbit</button>
+        </form>
+        <p>Already have an account? <a href="">Log in</a></p>
+    </section>
+
+    <!-- fix: image size, adjust section left of form, stack on top (w css), add bg bar behind logo -->
+    <section class="side-image">
+        <img src="/Project 1. Sign-up Form/village-from-above.jpg" alt="an exotic village from above. Drone foto">
+        <img src="/Project 1. Sign-up Form/odin-lined-logo.png" alt="Odin logo">
+    </section>
+
+</body>
+</html>
