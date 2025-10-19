@@ -28,12 +28,6 @@ main {
     align-items: center;
     gap: 10vw;
     padding-top: 10%;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-.form-block >* {
-    
 }
 
 /* stops image from dislocating the form */
@@ -64,3 +58,32 @@ section > p > a {
     font-weight: bolder;
     text-decoration: none;
 }
+
+.inputs {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+/* FIX: how tf do i make them be 2 & 2 and look aligned */
+.inputs > .field {
+    flex-basis: calc(100%/2);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+input {
+    border: solid 1px rgba(128, 128, 128, 0.219);
+    border-radius: 5px;
+    padding: 4px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
