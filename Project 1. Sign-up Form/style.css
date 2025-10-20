@@ -72,6 +72,10 @@ section > p > a {
     text-decoration: none;
 }
 
+h1, h2 {
+    margin-bottom: 20px;
+}
+
 .inputs {
     padding: 10px;
     display: flex;
