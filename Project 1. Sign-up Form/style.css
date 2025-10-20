@@ -42,6 +42,12 @@ main {
     margin-left: calc(3vw*-1);
 }
 
+#whitebox > legend {
+    margin-left: 20px;
+    font-weight: 900;
+    font-size: x-large;
+}
+
 /* stops image from dislocating the form */
 aside { 
     width: 40%;
